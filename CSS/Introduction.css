@@ -1,0 +1,16 @@
+/* HTML is basically for structing o a webpage */
+/* CSS work as a presentation basis
+makes our webpage more presentable 
+It helps us to add effect like moving object, bubbles flying in the background
+*/
+/* Syntax of css :=
+selector{
+    property: value;}//basic syntax
+selector on which element we have to apply css.
+property what we want to apply on that tag like backgroung color ,align
+value values to the property */
+/* Types of CSS
+1. Inline CSS
+2. Internal CSS
+3. External CSS */
+/* Inline CSS */
