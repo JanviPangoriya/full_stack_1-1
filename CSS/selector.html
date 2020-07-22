@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selector</title>
+    <!-- INTERNAL CSS -->
+    <style>
+        /* Type Selector */
+        h1,h2,p{
+            color:red;
+            text-transform:capitalize;
+        }
+        /* 2.Universal SelectorSabki characters same kar deta hai */
+        *
+        {
+            font: size 20px;;
+        }
+        /* 3.descendant selector */
+         div p{/*p should be enclosed in div*/
+            background-color: yellow;
+        } 
+        /* 4.child selector */
+        div>p{/*paragraph jo div ke dirct child hai*/ 
+            background-color: green;
+        } 
+        /* 5.Class selector */
+        .name1{
+            background-color: indigo;
+        }
+        .name2
+        {
+            background-color: khaki;
+        }
+        /* 6.Id selector */
+        /* kisi bhi tag ko unique name dena */
+        #id1
+        {
+            background-color: lawngreen;
+        }
+        /* 7. attribute selector */
+        p[lang="fr"]
+        {
+            text-shadow: 2px 2px 4px blueviolet;
+        }
+        esa class jiska class attribute set hai uspe css lag jaye
+        p[class]
+        {
+            text-shadow: blueviolet;
+        } 
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="name1">This is Heading 1</h1>
+        <h2 id="id1">This is Heading 2</h2>        
+        <p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est quia eaque, reprehenderit eos ex at corporis sed ipsum quasi, illum amet doloremque, officiis quibusdam rerum ab doloribus? Neque quibusdam illum accusamus enim voluptas cupiditate obcaecati unde, reiciendis id totam quos molestias hic dolorem nemo officia praesentium deserunt, inventore impedit soluta.</p>
+    </div>
+    <div>
+        <h1 class="name2">This is Heading 1</h1>
+        <h2>This is Heading 2</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est quia eaque, reprehenderit eos ex at corporis sed ipsum quasi, illum amet doloremque, officiis quibusdam rerum ab doloribus? Neque quibusdam illum accusamus enim voluptas cupiditate obcaecati unde, reiciendis id totam quos molestias hic dolorem nemo officia praesentium deserunt, inventore impedit soluta.</p>
+    </div>
+    <div>
+        <h1 class="name1" >This is Heading 1</h1>
+        <h2>This is Heading 2</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est quia eaque, reprehenderit eos ex at corporis sed ipsum quasi, illum amet doloremque, officiis quibusdam rerum ab doloribus? Neque quibusdam illum accusamus enim voluptas cupiditate obcaecati unde, reiciendis id totam quos molestias hic dolorem nemo officia praesentium deserunt, inventore impedit soluta.</p>
+    </div>
+        <h1 class="name2">This is Heading 1</h1>
+        <h2>This is Heading 2</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est quia eaque, reprehenderit eos ex at corporis sed ipsum quasi, illum amet doloremque, officiis quibusdam rerum ab doloribus? Neque quibusdam illum accusamus enim voluptas cupiditate obcaecati unde, reiciendis id totam quos molestias hic dolorem nemo officia praesentium deserunt, inventore impedit soluta.</p>
+        <p lang="en">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, quisquam asperiores ipsam soluta dolorum voluptas voluptates eveniet distinctio ad natus fuga. Tempora dolores commodi numquam quas? Rerum sit pariatur iusto incidunt nostrum quasi soluta sapiente aperiam, omnis exercitationem quas, cumque laudantium earum adipisci! Natus sint pariatur laboriosam ea quas suscipit.</p>
+        <p lang="fr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab voluptate at ullam harum a enim amet aperiam tenetur, quaerat obcaecati, explicabo molestias odio ad fuga, id neque ea unde recusandae aliquid. Soluta harum beatae quo recusandae cupiditate eum deleniti debitis sint eos, aliquid eveniet, facere nobis laboriosam nesciunt ut eius.</p>
+    </body>
+</html>
