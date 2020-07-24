@@ -14,3 +14,16 @@ value values to the property */
 2. Internal CSS
 3. External CSS */
 /* Inline CSS */
+body
+{
+    background-color: lightgray;
+}
+p{
+    text-align: center;
+}
+h1{
+    color: lime;
+}
+/*priority of types of css
+ inline>internal>external css */
+ /* for commenting use ctrl +/ */
