@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <style>
+        p{
+            border: 3px solid red;
+            /* display: inline; */
+        }
+        #para2{
+            display: inline;
+        }
+        a
+        {
+            display: block;
+            border:3px solid rosybrown;
+            width: 200px;
+            height: 30px;
+            text-align: center;
+            background-color: royalblue;
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            margin: 20px auto;
+
+        }
+        a:hover
+        {
+            background-color: salmon;
+        }
+        #span1
+        {
+            margin: 10px;
+            padding: 5px;
+            background-color: red;
+            height: 20px;
+            width: 200px;
+            display:inline-block;
+        }
+        #span2
+            {
+             display: none; /*layout will change*//* treated as dead*/
+                /* visibility: hidden;layout will not change *//*treated as invisible*/
+            }
+    </style>
+</head>
+<body>
+    <!-- <span style="background-color: red;"> -->
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum incidunt repellendus pariatur! Consectetur magni, harum voluptatibus, nam ipsum porro rem similique dolores, autem placeat asperiores beatae maxime. Eligendi quaerat reprehenderit libero fuga ducimus aliquid deserunt, corrupti ratione consequuntur nihil commodi ab, fugit maiores, perferendis optio dolores nostrum magni inventore molestiae.</p>
+    <p id ="para2">Hello World!!!</p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, asperiores.
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum incidunt repellendus pariatur! Consectetur magni, harum voluptatibus, nam ipsum porro rem similique dolores, autem placeat asperiores<span id ="span1">beatae maxime</span>. Eligendi quaerat reprehenderit libero fuga ducimus aliquid deserunt, corrupti ratione consequuntur nihil commodi ab, fugit maiores, perferendis optio dolores nostrum magni inventore molestiae.</p>
+<!-- </span> -->
+<span id="span2">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod aut quas magni quasi consectetur ducimus, ipsam nisi aperiam saepe fugit.
+
+</span>
+<a href="#" onclick="hello()">This is alink</a>
+<!-- Using javascipt -->
+<script>
+    function hello()
+    {
+        document.getElementById("span2").style.display="inline";
+    }
+</script>
+</body>
+</html>
